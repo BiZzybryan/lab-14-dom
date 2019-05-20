@@ -22,13 +22,17 @@
       console.log(document.title);
       document.title = "Hello, Javascript";
 
-      var h1 = document.getElementById("Hello, Javascript!.")
+      var h1 = document.getElementById("greeting")
+      h1.innerHTML = "I need answers!"
+
+
       var listItems = document.getElementsByTagName('h1');
       document.title = "Avenger's";
-      listItems[0].innerText == "Screen Protector";
+      listItems[0].innerHTML = "Screen Protector";
 
-      var newBrand = document.createElement("Made with Javascript")
-      document.body.appendChild(p1)
+      var newBrand = document.createElement("p")
+      newBrand.innerHTML = " How to defeat Bad guys."
+      document.body.appendChild(newBrand)
 
     </script>
   </body>
